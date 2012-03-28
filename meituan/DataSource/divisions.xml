@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response code='0' date='2012-03-28T20:53:51+08:00' message='Ok'>
+  <divisions>
+    <division>
+      <id>beijing</id>
+      <name>北京</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>39.929986</latitude>
+        <longitude>116.395645</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shanghai</id>
+      <name>上海</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.249162</latitude>
+        <longitude>121.487899</longitude>
+      </location>
+    </division>
+    <division>
+      <id>guangzhou</id>
+      <name>广州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>23.120049</latitude>
+        <longitude>113.30765</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shenzhen</id>
+      <name>深圳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.546054</latitude>
+        <longitude>114.025974</longitude>
+      </location>
+    </division>
+    <division>
+      <id>tianjin</id>
+      <name>天津</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>39.14393</latitude>
+        <longitude>117.210813</longitude>
+      </location>
+    </division>
+    <division>
+      <id>xian</id>
+      <name>西安</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>34.2778</latitude>
+        <longitude>108.953098</longitude>
+      </location>
+    </division>
+    <division>
+      <id>fuzhou</id>
+      <name>福州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>26.047125</latitude>
+        <longitude>119.330221</longitude>
+      </location>
+    </division>
+    <division>
+      <id>chongqing</id>
+      <name>重庆</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>29.544606</latitude>
+        <longitude>106.530635</longitude>
+      </location>
+    </division>
+    <division>
+      <id>hangzhou</id>
+      <name>杭州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.259244</latitude>
+        <longitude>120.219375</longitude>
+      </location>
+    </division>
+    <division>
+      <id>ningbo</id>
+      <name>宁波</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>29.885259</latitude>
+        <longitude>121.579006</longitude>
+      </location>
+    </division>
+    <division>
+      <id>wuxi</id>
+      <name>无锡</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.570037</latitude>
+        <longitude>120.305456</longitude>
+      </location>
+    </division>
+    <division>
+      <id>nanjing</id>
+      <name>南京</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.057236</latitude>
+        <longitude>118.778074</longitude>
+      </location>
+    </division>
+    <division>
+      <id>hefei</id>
+      <name>合肥</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.866942</latitude>
+        <longitude>117.282699</longitude>
+      </location>
+    </division>
+    <division>
+      <id>wuhan</id>
+      <name>武汉</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.581084</latitude>
+        <longitude>114.3162</longitude>
+      </location>
+    </division>
+    <division>
+      <id>chengdu</id>
+      <name>成都</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.679943</latitude>
+        <longitude>104.067923</longitude>
+      </location>
+    </division>
+    <division>
+      <id>qingdao</id>
+      <name>青岛</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.105215</latitude>
+        <longitude>120.384428</longitude>
+      </location>
+    </division>
+    <division>
+      <id>xiamen</id>
+      <name>厦门</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>24.489231</latitude>
+        <longitude>118.103886</longitude>
+      </location>
+    </division>
+    <division>
+      <id>dalian</id>
+      <name>大连</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>38.94871</latitude>
+        <longitude>121.593478</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shenyang</id>
+      <name>沈阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>41.808645</latitude>
+        <longitude>123.432791</longitude>
+      </location>
+    </division>
+    <division>
+      <id>changsha</id>
+      <name>长沙</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>28.213478</latitude>
+        <longitude>112.979353</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zhengzhou</id>
+      <name>郑州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>34.75661</latitude>
+        <longitude>113.649644</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shijiazhuang</id>
+      <name>石家庄</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>38.048958</latitude>
+        <longitude>114.522082</longitude>
+      </location>
+    </division>
+    <division>
+      <id>suzhou</id>
+      <name>苏州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.317987</latitude>
+        <longitude>120.619907</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zibo</id>
+      <name>淄博</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.804685</latitude>
+        <longitude>118.059134</longitude>
+      </location>
+    </division>
+    <division>
+      <id>nantong</id>
+      <name>南通</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.014665</latitude>
+        <longitude>120.873801</longitude>
+      </location>
+    </division>
+    <division>
+      <id>nanchang</id>
+      <name>南昌</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>28.689578</latitude>
+        <longitude>115.893528</longitude>
+      </location>
+    </division>
+    <division>
+      <id>changzhou</id>
+      <name>常州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.771397</latitude>
+        <longitude>119.981861</longitude>
+      </location>
+    </division>
+    <division>
+      <id>dongguan</id>
+      <name>东莞</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>23.043024</latitude>
+        <longitude>113.763434</longitude>
+      </location>
+    </division>
+    <division>
+      <id>foshan</id>
+      <name>佛山</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>23.035095</latitude>
+        <longitude>113.134026</longitude>
+      </location>
+    </division>
+    <division>
+      <id>guilin</id>
+      <name>桂林</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>25.262901</latitude>
+        <longitude>110.26092</longitude>
+      </location>
+    </division>
+    <division>
+      <id>haikou</id>
+      <name>海口</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>20.022071</latitude>
+        <longitude>110.330802</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jinan</id>
+      <name>济南</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.682785</latitude>
+        <longitude>117.024967</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jiaozuo</id>
+      <name>焦作</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>35.234608</latitude>
+        <longitude>113.211836</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jinzhou</id>
+      <name>锦州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>41.130879</latitude>
+        <longitude>121.147749</longitude>
+      </location>
+    </division>
+    <division>
+      <id>nanning</id>
+      <name>南宁</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.806493</latitude>
+        <longitude>108.297234</longitude>
+      </location>
+    </division>
+    <division>
+      <id>taiyuan</id>
+      <name>太原</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>37.890277</latitude>
+        <longitude>112.550864</longitude>
+      </location>
+    </division>
+    <division>
+      <id>wuhu</id>
+      <name>芜湖</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.36602</latitude>
+        <longitude>118.384108</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yantai</id>
+      <name>烟台</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>37.536562</latitude>
+        <longitude>121.309555</longitude>
+      </location>
+    </division>
+    <division>
+      <id>haerbin</id>
+      <name>哈尔滨</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>45.773225</latitude>
+        <longitude>126.657717</longitude>
+      </location>
+    </division>
+    <division>
+      <id>langfang</id>
+      <name>廊坊</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>39.518611</latitude>
+        <longitude>116.703602</longitude>
+      </location>
+    </division>
+    <division>
+      <id>guiyang</id>
+      <name>贵阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>26.629907</latitude>
+        <longitude>106.709177</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zhuhai</id>
+      <name>珠海</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.256915</latitude>
+        <longitude>113.562447</longitude>
+      </location>
+    </division>
+    <division>
+      <id>qiqihaer</id>
+      <name>齐齐哈尔</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>47.3477</latitude>
+        <longitude>123.987289</longitude>
+      </location>
+    </division>
+    <division>
+      <id>quanzhou</id>
+      <name>泉州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>24.901652</latitude>
+        <longitude>118.600362</longitude>
+      </location>
+    </division>
+    <division>
+      <id>wenzhou</id>
+      <name>温州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>28.002838</latitude>
+        <longitude>120.690635</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zhongshan</id>
+      <name>中山</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.545178</latitude>
+        <longitude>113.42206</longitude>
+      </location>
+    </division>
+    <division>
+      <id>kunming</id>
+      <name>昆明</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>25.049153</latitude>
+        <longitude>102.714601</longitude>
+      </location>
+    </division>
+    <division>
+      <id>changchun</id>
+      <name>长春</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>43.898338</latitude>
+        <longitude>125.313642</longitude>
+      </location>
+    </division>
+    <division>
+      <id>xuzhou</id>
+      <name>徐州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>34.271553</latitude>
+        <longitude>117.188107</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yangzhou</id>
+      <name>扬州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.408505</latitude>
+        <longitude>119.427778</longitude>
+      </location>
+    </division>
+    <division>
+      <id>tangshan</id>
+      <name>唐山</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>39.650531</latitude>
+        <longitude>118.183451</longitude>
+      </location>
+    </division>
+    <division>
+      <id>qinhuangdao</id>
+      <name>秦皇岛</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>39.945462</latitude>
+        <longitude>119.604368</longitude>
+      </location>
+    </division>
+    <division>
+      <id>handan</id>
+      <name>邯郸</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.609308</latitude>
+        <longitude>114.482694</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yuncheng</id>
+      <name>运城</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>35.038859</latitude>
+        <longitude>111.006854</longitude>
+      </location>
+    </division>
+    <division>
+      <id>linfen</id>
+      <name>临汾</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.099745</latitude>
+        <longitude>111.538788</longitude>
+      </location>
+    </division>
+    <division>
+      <id>huhehaote</id>
+      <name>呼和浩特</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>40.828319</latitude>
+        <longitude>111.660351</longitude>
+      </location>
+    </division>
+    <division>
+      <id>baotou</id>
+      <name>包头</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>40.647119</latitude>
+        <longitude>109.846239</longitude>
+      </location>
+    </division>
+    <division>
+      <id>anshan</id>
+      <name>鞍山</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>41.118744</latitude>
+        <longitude>123.007763</longitude>
+      </location>
+    </division>
+    <division>
+      <id>fushun</id>
+      <name>抚顺</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>41.877304</latitude>
+        <longitude>123.92982</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jilin</id>
+      <name>吉林</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>43.678846</latitude>
+        <longitude>126.262876</longitude>
+      </location>
+    </division>
+    <division>
+      <id>lianyungang</id>
+      <name>连云港</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>34.601549</latitude>
+        <longitude>119.173872</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yancheng</id>
+      <name>盐城</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>33.379862</latitude>
+        <longitude>120.148872</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zhenjiang</id>
+      <name>镇江</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.204409</latitude>
+        <longitude>119.455835</longitude>
+      </location>
+    </division>
+    <division>
+      <id>taizhou</id>
+      <name>泰州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.476053</latitude>
+        <longitude>119.919606</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jiaxing</id>
+      <name>嘉兴</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.773992</latitude>
+        <longitude>120.760428</longitude>
+      </location>
+    </division>
+    <division>
+      <id>huzhou</id>
+      <name>湖州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.877925</latitude>
+        <longitude>120.137243</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shaoxing</id>
+      <name>绍兴</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.002365</latitude>
+        <longitude>120.592467</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jinhua</id>
+      <name>金华</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>29.102899</latitude>
+        <longitude>119.652576</longitude>
+      </location>
+    </division>
+    <division>
+      <id>taizhoutz</id>
+      <name>台州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>28.668283</latitude>
+        <longitude>121.440613</longitude>
+      </location>
+    </division>
+    <division>
+      <id>dongying</id>
+      <name>东营</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>37.487121</latitude>
+        <longitude>118.583926</longitude>
+      </location>
+    </division>
+    <division>
+      <id>weifang</id>
+      <name>潍坊</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.716115</latitude>
+        <longitude>119.142634</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jining</id>
+      <name>济宁</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>35.402122</latitude>
+        <longitude>116.600798</longitude>
+      </location>
+    </division>
+    <division>
+      <id>taian</id>
+      <name>泰安</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.188078</latitude>
+        <longitude>117.089415</longitude>
+      </location>
+    </division>
+    <division>
+      <id>weihai</id>
+      <name>威海</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>37.528787</latitude>
+        <longitude>122.093958</longitude>
+      </location>
+    </division>
+    <division>
+      <id>linyi</id>
+      <name>临沂</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>35.072409</latitude>
+        <longitude>118.340768</longitude>
+      </location>
+    </division>
+    <division>
+      <id>liaocheng</id>
+      <name>聊城</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.455829</latitude>
+        <longitude>115.986869</longitude>
+      </location>
+    </division>
+    <division>
+      <id>luoyang</id>
+      <name>洛阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>34.657368</latitude>
+        <longitude>112.447525</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yichang</id>
+      <name>宜昌</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.732758</latitude>
+        <longitude>111.310981</longitude>
+      </location>
+    </division>
+    <division>
+      <id>xiangyang</id>
+      <name>襄阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>32.094934</latitude>
+        <longitude>112.176326</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jingzhou</id>
+      <name>荆州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>30.332591</latitude>
+        <longitude>112.241866</longitude>
+      </location>
+    </division>
+    <division>
+      <id>hengyang</id>
+      <name>衡阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>26.898164</latitude>
+        <longitude>112.583819</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yueyang</id>
+      <name>岳阳</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>29.378007</latitude>
+        <longitude>113.146196</longitude>
+      </location>
+    </division>
+    <division>
+      <id>jiangmen</id>
+      <name>江门</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.575117</latitude>
+        <longitude>113.078125</longitude>
+      </location>
+    </division>
+    <division>
+      <id>huizhou</id>
+      <name>惠州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>23.11354</latitude>
+        <longitude>114.410658</longitude>
+      </location>
+    </division>
+    <division>
+      <id>liuzhou</id>
+      <name>柳州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>24.329053</latitude>
+        <longitude>109.422402</longitude>
+      </location>
+    </division>
+    <division>
+      <id>zunyi</id>
+      <name>遵义</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>27.699961</latitude>
+        <longitude>106.93126</longitude>
+      </location>
+    </division>
+    <division>
+      <id>lanzhou</id>
+      <name>兰州</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.064226</latitude>
+        <longitude>103.823305</longitude>
+      </location>
+    </division>
+    <division>
+      <id>xining</id>
+      <name>西宁</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>36.640739</latitude>
+        <longitude>101.767921</longitude>
+      </location>
+    </division>
+    <division>
+      <id>kunshan</id>
+      <name>昆山</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>31.328937</latitude>
+        <longitude>120.965808</longitude>
+      </location>
+    </division>
+    <division>
+      <id>yiwu</id>
+      <name>义乌</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>29.306444</latitude>
+        <longitude>120.067296</longitude>
+      </location>
+    </division>
+    <division>
+      <id>shunde</id>
+      <name>顺德</name>
+      <location>
+        <timezone>Beijing Time</timezone>
+        <timezone_offset_gmt>288000</timezone_offset_gmt>
+        <latitude>22.84851</latitude>
+        <longitude>113.18703</longitude>
+      </location>
+    </division>
+  </divisions>
+</response>
