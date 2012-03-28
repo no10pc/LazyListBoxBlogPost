@@ -1,0 +1,14 @@
+﻿<NetflixBrowserTest_ViewModels:NetflixDataList xmlns:NetflixBrowserTest_ViewModels="clr-namespace:NetflixBrowserTest.ViewModels">
+	<NetflixBrowserTest_ViewModels:NetflixDataList.Data>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Class cras nam aenean duis mauris curae donec aliquam maecenas" Title="A. Datum Corporation" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Praesent accumsan bibendum nunc etiam sed nullam dis fusce est lorem morbi aptent dictumst hac integer" Title="Adventure Works" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Nulla auctor congue leo amet ante eleifend cursus mus arcu quisque" Title="Adventure Works" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Vivamus aliquam aliquet proin facilisi blandit faucibus augue diam dolor commodo" Title="Alpine Ski House" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Eget conubia elit nec non dictum per habitant cubilia sed lectus" Title="Baldwin Museum of Science" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Libero sem inceptos dapibus ligula litora luctus interdum enim sit erat fames lobortis felis egestas euismod magnis mattis mauris" Title="Blue Yonder Airlines" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Ipsum feugiat justo gravida eros iaculis nascetur nibh nisi lacus lorem vel mollis montes nisl nam nostra" Title="City Power &amp; Light" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Ornare sed dis magna lacinia nunc est platea hac massa metus laoreet odio pharetra primis" Title="Coho Vineyard" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Orci leo natoque posuere pede quam rutrum mus potenti morbi neque" Title="Coho Winery" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+		<NetflixBrowserTest_ViewModels:NetflixData Description="Sapien placerat pulvinar semper sagittis sociis quis nec non netus taciti urna tellus" Title="Coho Vineyard &amp; Winery" Id="http://foo.bar.com/" ImageUri="http://foo.com/"/>
+	</NetflixBrowserTest_ViewModels:NetflixDataList.Data>
+</NetflixBrowserTest_ViewModels:NetflixDataList>

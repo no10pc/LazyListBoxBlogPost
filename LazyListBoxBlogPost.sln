@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIExtensionMethods", "UIExtensionMethods\UIExtensionMethods\UIExtensionMethods.csproj", "{98790068-504F-4595-86E6-6F8E406A4023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyListBox", "LazyListBox\LazyListBox.csproj", "{68EABC1F-B7EF-4FBE-97AD-CCD0B6455119}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelayLoadListBoxItem", "DelayLoadListBoxItem\DelayLoadListBoxItem\DelayLoadListBoxItem.csproj", "{D359C6A0-5FB0-4032-935A-7F615BF024FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetflixBrowserTest", "NetflixBrowserTest\NetflixBrowserTest\NetflixBrowserTest.csproj", "{07EA8369-24B0-470E-92F7-A95BA839D291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98790068-504F-4595-86E6-6F8E406A4023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98790068-504F-4595-86E6-6F8E406A4023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98790068-504F-4595-86E6-6F8E406A4023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98790068-504F-4595-86E6-6F8E406A4023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EABC1F-B7EF-4FBE-97AD-CCD0B6455119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EABC1F-B7EF-4FBE-97AD-CCD0B6455119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EABC1F-B7EF-4FBE-97AD-CCD0B6455119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EABC1F-B7EF-4FBE-97AD-CCD0B6455119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D359C6A0-5FB0-4032-935A-7F615BF024FA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EA8369-24B0-470E-92F7-A95BA839D291}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
