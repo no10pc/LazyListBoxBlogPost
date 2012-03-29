@@ -1,4 +1,4 @@
-﻿/*
+﻿﻿/*
   In App.xaml:
   <Application.Resources>
       <vm:ViewModelLocatorTemplate xmlns:vm="clr-namespace:meituan.ViewModel"
@@ -43,19 +43,26 @@ namespace meituan.ViewModel
             }
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<LazyViewModel>();
         }
 
         /// <summary>
         /// Gets the Main property.
         /// </summary>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance",
-            "CA1822:MarkMembersAsStatic",
-            Justification = "This non-static member is needed for data binding purposes.")]
+
         public MainViewModel Main
         {
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+
+        public LazyViewModel Lazy
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LazyViewModel>();
             }
         }
 

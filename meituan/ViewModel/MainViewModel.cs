@@ -4,6 +4,12 @@ using meituan.Model;
 using System.Xml.Linq;
 using System.Net;
 using System;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
+using meituan.Helper;
+using System.Windows.Navigation;
+using System.IO.IsolatedStorage;
+using System.IO;
 
 namespace meituan.ViewModel
 {
@@ -49,70 +55,6 @@ namespace meituan.ViewModel
                 RaisePropertyChanged(WelcomeTitlePropertyName);
             }
         }
-
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel(IDataService dataService)
-        {
-            _dataService = dataService;
-            _dataService.GetData(
-                (item, error) =>
-                {
-                    if (error != null)
-                    {
-                        // Report error here
-                        return;
-                    }
-
-                    WelcomeTitle = item.Title;
-
-                   
-                   // cityList =  new DataItem().getCityList();
-
-
-                    doDealList("beijing");
-
-
-                });
-        }
-        public void doDealList(string cityid)
-        {
-            WebClient client = new WebClient();
-            Uri uri = new Uri(String.Format("http://www.meituan.com/api/v2/{0}/deals", cityid), UriKind.Absolute);
-            client.DownloadStringAsync(uri);
-            client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
-        }
-
-        void client_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
-        {
-            List<Deal> list = new List<Deal>();
-
-            XElement xml = XElement.Parse(e.Result);
-
-            foreach (XElement element1 in xml.Element("deals").Elements("data"))
-            {
-                foreach (XElement element2 in element1.Elements("deal"))
-                {
-
-                    list.Add(new Deal()
-                    {
-                        City_Name = element2.Element("city_name").Value,
-                        Deal_Id = element2.Element("deal_id").Value,
-                        Deal_img = element2.Element("deal_img").Value.Replace("275.168", "150.90"),
-                        Deal_Price = element2.Element("price").Value,
-                        Deal_title = element2.Element("deal_title").Value,
-                        Deal_Url = element2.Element("deal_url").Value,
-                        Value = "￥" + element2.Element("value").Value
-                    });
-                }
-            }
-
-            dealList = list;
-        }
-        /// <summary>
-        /// The <see cref="MyProperty" /> property's name.
-        /// </summary>
         public const string MyPropertyPropertyName = "cityList";
 
         private List<City> _citylist;
@@ -142,30 +84,60 @@ namespace meituan.ViewModel
 
 
 
-        private List<Deal> _deallist;
+      
+        /// <summary>
+        /// Initializes a new instance of the MainViewModel class.
+        /// </summary>
+        public MainViewModel(IDataService dataService)
+        {
+            _dataService = dataService;
+            _dataService.GetData(
+                (item, error) =>
+                {
+                    if (error != null)
+                    {
+                        // Report error here
+                        return;
+                    }
+                    gotoPage = new RelayCommand<City>((x) => ExecutegotoPage(x));
+                    WelcomeTitle = item.Title;
+                    cityList = new DataItem().getCityList();
+
+                });
+        }
+       
+
+
+        public RelayCommand<City> gotoPage { get; private set; }
+
+        public object ExecutegotoPage(City _city)
+        {
+            var msg = new PageMessage() { city = _city };
+            var appStoreage = IsolatedStorageFile.GetUserStoreForApplication();
+            using (var file = appStoreage.OpenFile("city.txt", FileMode.Create, FileAccess.ReadWrite))
+            {
+                using (var writer = new StreamWriter(file))
+                {
+                    writer.Write(_city.Py+"|"+_city.Name);
+                }
+            }
+            var rootFrame = (App.Current as App).RootFrame;
+            rootFrame.Navigate(new System.Uri("/LazyPage.xaml", System.UriKind.Relative));
+            return null;
+        }
+
+
+        private void sendMessage(string _cityid)
+        {
+           
+        }
+
+
 
         /// <summary>
-        /// Sets and gets the MyProperty property.
-        /// Changes to that property's value raise the PropertyChanged event. 
+        /// The <see cref="MyProperty" /> property's name.
         /// </summary>
-        public List<Deal> dealList
-        {
-            get
-            {
-                return _deallist;
-            }
 
-            set
-            {
-                if (_deallist == value)
-                {
-                    return;
-                }
-
-                _deallist = value;
-                RaisePropertyChanged("dealList");
-            }
-        }
         ////public override void Cleanup()
         ////{
         ////    // Clean up if needed
@@ -173,4 +145,5 @@ namespace meituan.ViewModel
         ////    base.Cleanup();
         ////}
     }
+
 }

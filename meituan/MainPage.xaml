@@ -1,10 +1,11 @@
-﻿<phone:PhoneApplicationPage xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit"  x:Class="meituan.MainPage"
+﻿<phone:PhoneApplicationPage xmlns:toolkitPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls.Toolkit"
                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
                             xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
                             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:GalaSoft_MvvmLight_Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP71"  x:Class="meituan.MainPage"
                             SupportedOrientations="Portrait"
                             Orientation="Portrait"
                             mc:Ignorable="d"
@@ -37,45 +38,24 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentGrid"
 		      Grid.Row="1">
-
-            <ListBox x:Name="PersonListBox"    Margin="10"    ItemsSource="{Binding dealList,Mode=OneWay}">
-
+            <ListBox x:Name="PersonListBox"    Margin="10"    ItemsSource="{Binding cityList, Mode=OneWay}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Grid Height="101" Background="White" HorizontalAlignment="Left" Margin="0,0,0,0" Name="grid1" VerticalAlignment="Top" Width="456">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="150" />
-                                <ColumnDefinition Width="306" />
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Orientation="Horizontal" Grid.Column="1" Height="29" HorizontalAlignment="Left" Name="stackPanel1" VerticalAlignment="Top" Width="306">
-                                <TextBlock Margin="10,0,0,0" Text="{Binding Deal_Price }" FontSize="25" Foreground="#00d5ff" />
-                                <TextBlock Margin="5,10,0,0" Text="元" FontSize="15" Foreground="#00d5ff" />
-                                <TextBlock Margin="25,10,0,0" Text="{Binding Value }"  FontSize="15" Foreground="#cccccc" />
-                            </StackPanel>
-                            <StackPanel Name="stackPanel2" Grid.Column="1" Margin="0,28,0,21" >
-                                <TextBlock Margin="10,0,0,0" TextWrapping="Wrap"  Text="{Binding Deal_title}" FontSize="18" Foreground="#000000" Height="50" Width="295" />
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal" Height="16" HorizontalAlignment="Left" Margin="0,79,0,0" Name="stackPanel3" VerticalAlignment="Top" Width="306" Grid.Column="1" >
-                                <TextBlock Margin="12,0,0,0" Text="0人购买"  FontSize="10" Foreground="#cccccc" />
-                                <TextBlock Margin="12,0,0,0" Text="0地址信息"  FontSize="10" Foreground="#cccccc" />
-                            </StackPanel>
-                            <Image Name="image1" VerticalAlignment="Stretch" Margin="5,0,6,0" HorizontalAlignment="Stretch" Source="{Binding Deal_img}" />
-                        </Grid>
+                        <StackPanel x:Name="stackPanel2" Grid.Column="1" Margin="0,28,0,21" >
+                            <TextBlock Margin="10,0,0,0" TextWrapping="Wrap"  Text="{Binding Name}" FontSize="38" Height="50" Width="295" />
+                        </StackPanel>
                     </DataTemplate>
-
                 </ListBox.ItemTemplate>
-
-
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="SelectionChanged">
+            			<GalaSoft_MvvmLight_Command:EventToCommand x:Name="selectchanged" Command="{Binding gotoPage, Mode=OneWay}" CommandParameter="{Binding SelectedItem, ElementName=PersonListBox}"/>
+            		</i:EventTrigger>
+            	</i:Interaction.Triggers>
             </ListBox>
-
-
         </Grid>
-        <StackPanel Grid.Row="2" Margin="12,0" Orientation="Horizontal">
-            <HyperlinkButton HorizontalAlignment="Left" Content="转到异步加载页" NavigateUri="/LazyPage.xaml" FontSize="{StaticResource PhoneFontSizeLarge}"/>
-        </StackPanel>
     </Grid>
 
-    
+
     <!--<phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"></shell:ApplicationBarIconButton>
@@ -85,7 +65,7 @@
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>-->
-   
+
 
 
 </phone:PhoneApplicationPage>

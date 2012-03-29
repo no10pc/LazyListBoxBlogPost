@@ -83,6 +83,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Design\DesignDataService.cs" />
+    <Compile Include="Helper\PageMessage.cs" />
     <Compile Include="LazyPage.xaml.cs">
       <DependentUpon>LazyPage.xaml</DependentUpon>
     </Compile>
@@ -93,6 +94,7 @@
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\LazyViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
