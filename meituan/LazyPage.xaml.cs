@@ -10,6 +10,7 @@ using meituan.Helper;
 using GalaSoft.MvvmLight.Messaging;
 using System.IO.IsolatedStorage;
 using System.IO;
+using System.Text;
 namespace meituan
 {
     /// <summary>
@@ -18,13 +19,14 @@ namespace meituan
     public partial class LazyPage : PhoneApplicationPage
     {
         protected City myCity;
+        protected XElement xml;
         /// <summary>
         /// Initializes a new instance of the LazyPage class.
         /// </summary>
         public LazyPage()
         {
             InitializeComponent();
-        
+
             PageTitle.ManipulationCompleted += delegate { ExtensionMethods.PrintDescendentsTree(myList); };
 
         }
@@ -69,18 +71,63 @@ namespace meituan
 
         public void doDealList(string cityid)
         {
-            WebClient client = new WebClient();
-            Uri uri = new Uri(String.Format("http://www.meituan.com/api/v2/{0}/deals", cityid), UriKind.Absolute);
-            client.OpenReadAsync(uri);
-            client.OpenReadCompleted += new OpenReadCompletedEventHandler(client_OpenReadCompleted);
+            var appStoreage = IsolatedStorageFile.GetUserStoreForApplication();
+            var filename = string.Format("deals_{0}.xml", cityid);
+            ///本地缓存更新时间【增加配置文件。。。。默认5分钟。增加强制更新功能】
+            if (appStoreage.FileExists(filename) && (DateTime.Now - appStoreage.GetCreationTime(filename)).Seconds > 300)
+            {
+
+                using (var file = appStoreage.OpenFile(filename, FileMode.Open, FileAccess.Read))
+                {
+
+                    StreamReader sr = new StreamReader(file);
+
+
+                    xml = XElement.Load(sr);
+                    myList.ItemsSource = praseXML(xml);
+
+                    this.cacheTime.Text = "[缓存时间:" + appStoreage.GetCreationTime(filename).ToString() + "]";
+                }
+
+                this.PageTitle.Text = myCity.Name + "团购";
+            }
+            else
+            {
+                WebClient client = new WebClient();
+                Uri uri = new Uri(String.Format("http://www.meituan.com/api/v2/{0}/deals", cityid), UriKind.Absolute);
+                client.OpenReadAsync(uri, cityid);
+                client.OpenReadCompleted += new OpenReadCompletedEventHandler(client_OpenReadCompleted);
+            }
         }
 
         void client_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
         {
+            xml = XElement.Load(e.Result);
+            var appStoreage = IsolatedStorageFile.GetUserStoreForApplication();
+            var filename = string.Format("deals_{0}.xml", e.UserState);
+            appStoreage.DeleteFile(filename);
+            using (var file = appStoreage.OpenFile(filename, FileMode.Create, FileAccess.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(file))
+                {
+                    Stream s = e.Result as Stream;
+                    s.Position = 0;
+                    Byte[] info = new Byte[s.Length];
+                    s.Read(info, 0, (int)s.Length);
+                    sw.BaseStream.Write(info, 0, info.Length);
+                    sw.Flush();
+                    sw.Close();
+                }
+                file.Close();
+
+            }
+            myList.ItemsSource = praseXML(xml);
+            this.PageTitle.Text = myCity.Name + "团购[实时]";
+            this.cacheTime.Text = "[数据已被缓存:" + appStoreage.GetCreationTime(filename).ToString() + "]";
+        }
+        private List<Deal> praseXML(XElement xml)
+        {
             List<Deal> list = new List<Deal>();
-
-            XElement xml = XElement.Load(e.Result);
-
             foreach (XElement element1 in xml.Element("deals").Elements("data"))
             {
                 foreach (XElement element2 in element1.Elements("deal"))
@@ -98,8 +145,7 @@ namespace meituan
                     });
                 }
             }
-            myList.ItemsSource = list;
-            this.PageTitle.Text= myCity.Name+"团购";
+            return list;
         }
 
     }

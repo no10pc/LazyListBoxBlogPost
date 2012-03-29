@@ -56,6 +56,9 @@ namespace meituan.Model
         public string Deal_Url { get; set; }
         public string Deal_Price { get; set; }
         public string Value { get; set; }
+        public string sales_num { get; set; }
+        public string shop_long {get;set;}
+        public string shop_lat {get;set;}
     }
 
 

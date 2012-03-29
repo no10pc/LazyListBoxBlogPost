@@ -32,8 +32,12 @@
             <TextBlock x:Name="ApplicationTitle"
                        Text="美团 每天团购一次"
                        Style="{StaticResource PhoneTextNormalStyle}" />
-            <TextBlock x:Name="PageTitle"
+            <TextBlock x:Name="PageTitle" FontSize="40"
                        Text="Loading..."
+                       Margin="9,-7,0,0"
+                       Style="{StaticResource PhoneTextTitle1Style}" />
+            <TextBlock x:Name="cacheTime" FontSize="20"
+                       Text=""
                        Margin="9,-7,0,0"
                        Style="{StaticResource PhoneTextTitle1Style}" />
         </StackPanel>
