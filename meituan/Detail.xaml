@@ -1,0 +1,72 @@
+﻿<phone:PhoneApplicationPage x:Class="meituan.Detail"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            mc:Ignorable="d"
+                            d:DesignWidth="480"
+                            d:DesignHeight="768"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            Loaded="PhoneApplicationPage_Loaded"
+                           >
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="ContentPanel"
+              Margin="12,8,12,0" Grid.RowSpan="2">
+        	<Grid Background="#FFCCCCCC" RenderTransformOrigin="0.509,0.471">
+        		<Grid.RowDefinitions>
+        			<RowDefinition Height="0.067*"/>
+        			<RowDefinition Height="0.357*"/>
+       
+ 
+        			<RowDefinition Height="0.466*"/>
+        		</Grid.RowDefinitions>
+        		<Image Margin="30,0" Grid.Row="1" Source="0326_0323173152[1].jpg" d:IsLocked="True"/>
+        		<Rectangle Fill="#FF317AA1"/>
+        		<Rectangle Fill="#FFF4F4F5" Margin="30,12,30,0" Grid.Row="2" Height="51" VerticalAlignment="Top" d:LayoutOverrides="GridBox"/>
+        		<TextBlock TextWrapping="Wrap" Text="全部2/255" Foreground="White" OpacityMask="#FFD87474" Opacity="0.995" TextAlignment="Center" FontSize="29.333" FontFamily="微软雅黑" Margin="0,5,0,0" d:IsLocked="True"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="36,18,0,0" Grid.Row="2" TextWrapping="Wrap" Text="￥88" FontSize="29.333" Width="79" Foreground="#FF1477D8" FontFamily="Arial Black" Height="45" VerticalAlignment="Top" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="115,34,0,0" Grid.Row="2" TextWrapping="Wrap" Text="￥88" FontSize="14.667" Width="36" Foreground="#FF8E8F8F" FontFamily="Arial Black" Height="20" VerticalAlignment="Top" d:LayoutOverrides="GridBox"/>
+        		<Button Content="抢购" HorizontalAlignment="Right" Margin="0,18,37,0" Grid.Row="2" Width="87" FontSize="18.667" BorderThickness="1" Foreground="#FF1477D8" Background="#FF1477D8" BorderBrush="#FF5F6868" Height="37" VerticalAlignment="Top" d:LayoutOverrides="GridBox"/>
+        		<TextBlock Margin="36,72,24,0" Grid.Row="2" TextWrapping="Wrap" Text="仅售25元！最高100元的嘉华国际影城电影票1张（含3D）" VerticalAlignment="Top" Height="89" FontSize="26.667" d:LayoutOverrides="GridBox"/>
+        		<Rectangle Fill="#FF3F3838" Height="1" Margin="30,160,30,0" Grid.Row="2" VerticalAlignment="Top" d:LayoutOverrides="GridBox"/>
+        		<Ellipse Fill="#FF1477D7" HorizontalAlignment="Left" Height="52" Margin="30,0,0,127" Grid.Row="2" VerticalAlignment="Bottom" Width="52" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="103,0,0,150" Grid.Row="2" TextWrapping="Wrap" Text="10人购买" VerticalAlignment="Bottom" FontSize="24" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="109,0,0,123" Grid.Row="2" TextWrapping="Wrap" Text="团购成功" VerticalAlignment="Bottom" FontSize="24" d:LayoutOverrides="GridBox"/>
+        		<Ellipse Fill="#FF30AD37" HorizontalAlignment="Right" Height="18" Margin="0,0,181,157" Grid.Row="2" VerticalAlignment="Bottom" Width="18" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Right" Margin="0,0,30,123" Grid.Row="2" TextWrapping="Wrap" Text="支持过期退款" VerticalAlignment="Bottom" FontSize="24" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Right" Margin="0,0,30,150" Grid.Row="2" TextWrapping="Wrap" Text="支持七天退款" VerticalAlignment="Bottom" RenderTransformOrigin="0.561,0.625" FontSize="24" d:LayoutOverrides="GridBox"/>
+        		<Ellipse Fill="#FF30AD37" HorizontalAlignment="Right" Height="18" Margin="0,0,181,131" Grid.Row="2" VerticalAlignment="Bottom" Width="18" RenderTransformOrigin="0.188,1.625" d:LayoutOverrides="GridBox"/>
+        		<Rectangle Fill="#FFB0B4B0" Height="40" Margin="30,0,30,80" Grid.Row="2" VerticalAlignment="Bottom" Stroke="#FF5A5050" d:LayoutOverrides="GridBox"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="180,0,0,84" Grid.Row="2" TextWrapping="Wrap" Text="查看详情" VerticalAlignment="Bottom" FontSize="24"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="398,0,0,78" Grid.Row="2" TextWrapping="Wrap" Text="&gt;" VerticalAlignment="Bottom" FontSize="29.333" Foreground="White"/>
+        		<Rectangle Fill="#FF222522" Height="42" Grid.Row="2" Stroke="#FF5A5050" VerticalAlignment="Bottom"/>
+        		<TextBlock HorizontalAlignment="Left" Margin="70,0,0,6" Grid.Row="2" TextWrapping="Wrap" Text="剩余时间 3天 ：23小时 ：29分" VerticalAlignment="Bottom" Foreground="White" FontSize="21.333"/>
+        	</Grid>
+        </Grid>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

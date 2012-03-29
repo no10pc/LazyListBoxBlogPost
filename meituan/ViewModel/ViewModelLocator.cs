@@ -44,6 +44,7 @@ namespace meituan.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<LazyViewModel>();
+            SimpleIoc.Default.Register<DetailViewModel>();
         }
 
         /// <summary>
@@ -63,6 +64,13 @@ namespace meituan.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<LazyViewModel>();
+            }
+        }
+        public DetailViewModel Detail
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<DetailViewModel>();
             }
         }
 

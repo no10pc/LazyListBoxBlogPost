@@ -11,6 +11,7 @@ using System;
 using System.Xml.Linq;
 using System.IO.IsolatedStorage;
 using System.IO;
+using System.Windows.Input;
 namespace meituan.ViewModel
 {
     /// <summary>
@@ -28,6 +29,21 @@ namespace meituan.ViewModel
 
   
         private string _welcomeTitle = string.Empty;
+
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return new RelayCommand(() =>
+                {
+
+                    Messenger.Default.Send<DialogMessage>(new DialogMessage("保存成功", result => { }));
+                        
+                });
+                    
+            }
+        }
 
         /// <summary>
         /// Gets the WelcomeTitle property.
@@ -78,25 +94,10 @@ namespace meituan.ViewModel
 
         private readonly IDataService _dataService;
 
-        public LazyViewModel(IDataService dataService)
+        public LazyViewModel()
         {
-            _dataService = dataService;
-            _dataService.GetData(
-                (item, error) =>
-                {
-                    if (error != null)
-                    {
-                        System.Windows.MessageBox.Show(error.ToString());
-                        return;
-                    }
-
-
-                });
-
-
             loadData = new RelayCommand(() => ExecuteloadData());
             WelcomeTitle = "Loading...";
-            ExecuteloadData();
         }
 
 

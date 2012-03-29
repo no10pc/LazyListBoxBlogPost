@@ -11,6 +11,9 @@ using GalaSoft.MvvmLight.Messaging;
 using System.IO.IsolatedStorage;
 using System.IO;
 using System.Text;
+using System.Windows;
+using meituan.ViewModel;
+using Microsoft.Phone.Shell;
 namespace meituan
 {
     /// <summary>
@@ -28,7 +31,6 @@ namespace meituan
             InitializeComponent();
 
             PageTitle.ManipulationCompleted += delegate { ExtensionMethods.PrintDescendentsTree(myList); };
-
         }
 
 
@@ -73,8 +75,8 @@ namespace meituan
         {
             var appStoreage = IsolatedStorageFile.GetUserStoreForApplication();
             var filename = string.Format("deals_{0}.xml", cityid);
-            ///本地缓存更新时间【增加配置文件。。。。默认5分钟。增加强制更新功能】
-            if (appStoreage.FileExists(filename) && (DateTime.Now - appStoreage.GetCreationTime(filename)).Seconds > 300)
+          
+            if (appStoreage.FileExists(filename))
             {
 
                 using (var file = appStoreage.OpenFile(filename, FileMode.Open, FileAccess.Read))
@@ -147,6 +149,20 @@ namespace meituan
             }
             return list;
         }
+
+        private void myList_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (myList.SelectedItem!=null)
+            {
+                Deal deal = myList.SelectedItem as Deal;
+                PhoneApplicationService.Current.State["deal"] = deal;
+                NavigationService.Navigate(new Uri("/Detail.xaml", UriKind.RelativeOrAbsolute));
+            }
+
+
+
+        }
+    
 
     }
 }
